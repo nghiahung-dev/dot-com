@@ -19,6 +19,6 @@ export async function GET(context: APIContext) {
 			title: post.data.title,
 		})),
 		site: context.site?.toString() ?? site,
-		title: "Goldblog",
+		title: "Hungblog",
 	});
 }

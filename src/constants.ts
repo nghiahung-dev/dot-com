@@ -1,4 +1,3 @@
-export const blogDescription =
-	"A blog about open source, static analysis, and web dev.";
+export const blogDescription = "A blog of nghiahung.dev";
 
-export const site = "https://joshuakgoldberg.com";
+export const site = "https://nghiahung.dev";

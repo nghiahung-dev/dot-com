@@ -1,8 +1,8 @@
 ---
 import { getCollection } from "astro:content";
 
-import goldblogDark from "~/assets/goldblog-dark.webp";
-import goldblogLight from "~/assets/goldblog-light.webp";
+import hungblogDark from "~/assets/hungblog-dark.webp";
+import hungblogLight from "~/assets/hungblog-light.webp";
 import { Anchor } from "~/components/Anchor";
 import { BlogsGrouped } from "~/components/blog/BlogsGrouped";
 import BodyContents from "~/components/BodyContents.astro";
@@ -17,10 +17,10 @@ const blogs = await getCollection("blog");
 <HeroLayout
 	alt="Smiling cat receiving head scratches next to a laptop showing VS Code"
 	description={blogDescription}
-	images={{ dark: goldblogDark, light: goldblogLight }}
-	preview="images/goldblog-preview.png"
-	primary="Goldblog"
-	title="Goldblog"
+	images={{ dark: hungblogDark, light: hungblogLight }}
+	preview="images/hungblog-preview.png"
+	primary="Blog"
+	title="Blog"
 >
 	<Fragment slot="secondary">{blogDescription}</Fragment>
 	<HeroTertiary slot="tertiary">
