@@ -35,7 +35,7 @@ export function BarChart(props: BarChartProps) {
 
 	// Why the inline CSS instead of CSS modules, you ask?
 	// ...because Astro isn't loading them in production builds:
-	// https://github.com/JoshuaKGoldberg/dot-com/issues/195
+	// https://github.com/nghiahung-dev/dot-com/issues/195
 	return (
 		<figure
 			style={{
