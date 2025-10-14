@@ -1,0 +1,24 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"eslint.probe": [
+		"astro",
+		"javascript",
+		"javascriptreact",
+		"json",
+		"jsonc",
+		"markdown",
+		"typescript",
+		"typescriptreact",
+		"yaml"
+	],
+	"eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+	"prettier.documentSelectors": ["**/*.astro"],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	}
+}

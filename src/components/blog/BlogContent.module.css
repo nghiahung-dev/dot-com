@@ -1,0 +1,154 @@
+.article {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--fontSizeSmall);
+	gap: 1rem;
+	font-weight: 300;
+	line-height: var(--lineHeightParagraph);
+	transition: line-height var(--transitionSlow);
+}
+
+.article a {
+	text-decoration: underline;
+}
+
+.article :is(a, h2, h3, h4, h5, [data-footnotes] li) {
+	scroll-margin-top: var(--heightMinimumFromHeader);
+}
+
+.article h2 {
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.article h3 {
+	font-size: 1.75rem;
+	margin-top: 1rem;
+}
+
+.article h4 {
+	font-size: 1.5rem;
+	margin-top: 0.75rem;
+}
+
+.article h5 {
+	font-size: 1.35rem;
+	margin-top: 0.5rem;
+}
+
+.article code {
+	font-size: 0.8em;
+}
+
+.article pre {
+	border: 1px solid var(--colorSubtle);
+	font-size: 0.9em;
+	margin: 0;
+	overflow-x: auto;
+	font-size: 0.9em;
+	padding: 1rem 1.5rem;
+	tab-size: 4;
+}
+
+.article :is(aside, blockquote) {
+	--blockBorderWidth: 6px;
+	margin-left: 0;
+	padding-left: calc(2rem - var(--blockBorderWidth));
+	position: relative;
+}
+
+.article :is(aside, blockquote)::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: var(--blockBorderWidth);
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: linear-gradient(
+		to bottom,
+		var(--colorEmphasized),
+		var(--colorForeground)
+	);
+}
+
+.article :is(blockquote, h2, h3, h4, h5) + blockquote {
+	margin: 0;
+}
+
+.article hr {
+	border-color: var(--colorMedium);
+	border-width: 0 0 1px 0;
+	margin: 3rem auto 2rem;
+	width: 100%;
+}
+
+.article ol,
+.article ul {
+	margin: 0;
+}
+
+.article li + li {
+	margin-top: 0.5rem;
+}
+
+.article li ol,
+.article li ul {
+	margin-top: 0.5rem;
+}
+
+.article strong {
+	font-weight: bolder;
+}
+
+.article sup a {
+	padding: 0 0.1rem 0 0.2rem;
+	scroll-margin-top: var(--heightMinimumFromHeader);
+}
+
+.article table {
+	border-spacing: 0;
+	text-align: left;
+}
+
+.article th {
+	font-weight: var(--fontWeightBold);
+}
+
+.article :is(td, th) {
+	border-bottom: 1px solid var(--colorSubtle);
+	padding-top: 0.5rem;
+}
+
+.article :is([data-footnotes]) {
+	font-size: var(--fontSizeSmaller);
+}
+
+@media (min-width: 1017px) {
+	.article {
+		max-width: calc(var(--widthSlim) + 4rem);
+		margin: 0 var(--widthTableOfContents) 0 0;
+	}
+}
+
+.article :global(.tab-panel) {
+	border: none;
+	padding: 0.5rem 0 0;
+}
+
+.article :global(.tab-panel) pre {
+	width: 100%;
+}
+
+.article :global(.tab) {
+	border: 0;
+	border-bottom: 0.25rem solid transparent;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.article :global(.tab)[aria-selected="true"] {
+	background-color: transparent;
+	border-bottom: 0.25rem solid var(--colorForeground);
+	color: var(--colorForeground);
+}
