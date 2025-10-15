@@ -1,3 +1,4 @@
 .all-contributorsrc
 dist/
 pnpm-lock.yaml
+.tmp/

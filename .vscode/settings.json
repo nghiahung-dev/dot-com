@@ -19,6 +19,6 @@
 	"prettier.documentSelectors": ["**/*.astro"],
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode"
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }
