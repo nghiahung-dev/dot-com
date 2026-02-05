@@ -1,54 +1,17 @@
 ---
-import hungDark from "~/assets/hung-dark.webp";
-import hungLight from "~/assets/hung-light.webp";
-import BodyContents from "~/components/BodyContents.astro";
-import Socials from "~/components/Socials.astro";
-import { Text } from "~/components/Text";
 
-import HeroLayout from "../layouts/HeroLayout.astro";
 ---
 
-<HeroLayout
-	alt="Hung's half-smiling happy face"
-	description="I'm a person in path to become a software engineer."
-	images={{ dark: hungDark, light: hungLight }}
-	primary="Hi! I'm Hung."
-	slug="hung"
->
-	<Fragment slot="secondary">
-		I'm a person in path to become a software engineer.
-	</Fragment>
-	<Socials slot="tertiary" />
-	<BodyContents class="about">
-		<Text as="p" fontSize="medium" fontWeight="light">
-			I am learning more to become a true software engineer.
-		</Text>
-		<Text as="p" fontSize="medium" fontWeight="light">
-			<b>English</b> very challenge me to become a true software engineer!
-		</Text>
-	</BodyContents>
-</HeroLayout>
-
-<style>
-	.tabletUp {
-		display: none;
-	}
-
-	.about {
-		display: flex;
-		gap: clamp(1vh, 1.5rem, 3vh);
-		flex-direction: column;
-		margin: 2rem 0 1rem;
-	}
-
-	@media (min-width: 700px) {
-		.tabletUp {
-			display: block;
-		}
-
-		.about {
-			margin-top: 3.5rem;
-			text-align: center;
-		}
-	}
-</style>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>Astro</h1>
+	</body>
+</html>

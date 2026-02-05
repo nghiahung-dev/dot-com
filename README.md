@@ -1,41 +1,43 @@
-<h1 align="center">Nghia Hung Dot Com</h1>
+# Astro Starter Kit: Minimal
 
-<p align="center">
-	<a href="https://github.com/nghiahung-dev/dot-com/blob/main/.github/CODE_OF_CONDUCT.md" target="_blank"><img alt="🤝 Code of Conduct: Kept" src="https://img.shields.io/badge/%F0%9F%A4%9D_code_of_conduct-kept-21bb42" /></a>
-	<a href="https://github.com/nghiahung-dev/dot-com/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg"></a>
-	<img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
-</p>
+```sh
+pnpm create astro@latest -- --template minimal
+```
 
-<p align="center">
-    Personal site for Nghia Hung.
-    Hooray! ✨
-</p>
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Development
+## 🚀 Project Structure
 
-See [`.github/CONTRIBUTING.md`](./.github/CONTRIBUTING.md), then [`.github/DEVELOPMENT.md`](./.github/DEVELOPMENT.md).
-Thanks! 💖
+Inside of your Astro project, you'll see the following folders and files:
 
-## Contributors ✨
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="http://www.joshuakgoldberg.com/"><img src="https://avatars.githubusercontent.com/u/3335181?v=4?s=100" width="100px;" alt="Josh Goldberg ✨"/><br /><sub><b>Josh Goldberg ✨</b></sub></a><br /><a href="#ideas-JoshuaKGoldberg" title="Ideas, Planning, & Feedback">🤔</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/nghiahung-dev"><img src="https://avatars.githubusercontent.com/u/52577080?v=4?s=100" width="100px;" alt="Nghia Hung ✨"/><br /><sub><b>Nghia Hung ✨</b></sub></a><br /><a href="https://github.com/nghiahung-dev/dot-com/commits?author=nghiahung-dev" title="Code">💻</a> <a href="https://github.com/nghiahung-dev/dot-com/commits?author=nghiahung-dev" title="Documentation">📖</a></td>
-    </tr>
-  </tbody>
-</table>
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
 
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+Any static assets, like images, can be placed in the `public/` directory.
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+## 🧞 Commands
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification.
-Contributions of any kind welcome!
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `pnpm install`             | Installs dependencies                            |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
+| `pnpm build`           | Build your production site to `./dist/`          |
+| `pnpm preview`         | Preview your build locally, before deploying     |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
