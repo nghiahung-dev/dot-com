@@ -1,6 +1,8 @@
 import { NavLink, Outlet } from "react-router";
+import useDocumentTitle from "../hooks/useDocumentTitle";
 
 const ChatLayout = () => {
+    useDocumentTitle("Chat Layout");
     return (
         <div>
             <h1>Chat Layout</h1>
