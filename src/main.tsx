@@ -8,14 +8,14 @@ import ChatSettings from './ChatSettings.tsx';
 import ChatLayout from './layout/ChatLayout.tsx';
 import ChatDetail from './ChatDetail.tsx';
 import File from './File.tsx';
-import AppLayout from './layout/AppLayout.tsx';
+import LoginPage from './LoginPage.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AppLayout />}>
           <Route index element={<App />} />
+          <Route path="login" element={<LoginPage />} />
 
           <Route path="chat" element={<ChatLayout />}>
             <Route index element={<Chat />} />
@@ -24,7 +24,6 @@ createRoot(document.getElementById('root')!).render(
           </Route>
 
           <Route path="files/*" element={<File />} />
-        </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
